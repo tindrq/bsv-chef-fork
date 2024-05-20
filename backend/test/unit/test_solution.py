@@ -12,7 +12,7 @@ def sut():
 
 
 @pytest.mark.unit
-@pytest.mark.parametrize('take, expected' [(1, 'Banana Bread', )])
+@pytest.mark.parametrize('take, expected', [(1, 'Banana Bread', )])
 def optimal(sut, take, expected):
     diet = from_string('vegetarian')
     validationresult = sut.get_recipe(diet=diet, take_best=take)
