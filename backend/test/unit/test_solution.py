@@ -2,7 +2,7 @@ import pytest
 import unittest.mock as mock
 
 from src.controllers.recipecontroller import RecipeController
-from src.static.recipes import from_string
+from src.static.diets import from_string
 @pytest.fixture
 def sut():
     mockeList = mock.MagicMock()
